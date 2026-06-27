@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Huang Technology Global — Expert Advisor Trading</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>	
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -350,6 +350,23 @@
     .high .ea-tag { color: #ff7a7a; background: rgba(255,78,78,0.12); border: 1px solid rgba(255,78,78,0.2); }
     .low .ea-tag  { color: #5de88a; background: rgba(62,207,110,0.12); border: 1px solid rgba(62,207,110,0.2); }
 
+    .ea-link {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .ea-link:hover { background: rgba(201,146,26,0.1); }
+    .ea-link:hover .ea-name { color: var(--gold2); }
+    .ea-live {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-right: 4px;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    .ea-link:hover .ea-live { color: var(--gold2); }
+
     /* ── PROFIT SHARE ── */
     .profit-section { background: var(--dark); }
 
@@ -605,16 +622,18 @@
             High Risk — Higher Potential Return
           </div>
           <div class="ea-card-body">
-            <div class="ea-item">
+            <a class="ea-item ea-link" href="https://www.myfxbook.com/members/HianWi/htg-ea-smart-v152b/12086492" target="_blank">
               <div class="ea-bullet"></div>
               <span class="ea-name">SmartXau V1.5.2b</span>
+              <span class="ea-live">📊 Live Stats</span>
               <span class="ea-tag">High Risk</span>
-            </div>
-            <div class="ea-item">
+            </a>
+            <a class="ea-item ea-link" href="https://www.myfxbook.com/members/HianWi/ea-htg-smartxau-v152c/12091086" target="_blank">
               <div class="ea-bullet"></div>
               <span class="ea-name">SmartXau V1.5.2c</span>
+              <span class="ea-live">📊 Live Stats</span>
               <span class="ea-tag">High Risk</span>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -625,16 +644,18 @@
             Low Risk — Stable & Consistent
           </div>
           <div class="ea-card-body">
-            <div class="ea-item">
+            <a class="ea-item ea-link" href="https://www.myfxbook.com/members/HianWi/htg-ea-f831b/12045251" target="_blank">
               <div class="ea-bullet"></div>
               <span class="ea-name">F8.3.1b</span>
+              <span class="ea-live">📊 Live Stats</span>
               <span class="ea-tag">Low Risk</span>
-            </div>
-            <div class="ea-item">
+            </a>
+            <a class="ea-item ea-link" href="https://www.myfxbook.com/members/HianWi/htg-ea-goldminer-1shot/12088231" target="_blank">
               <div class="ea-bullet"></div>
               <span class="ea-name">HTG GoldMiner</span>
+              <span class="ea-live">📊 Live Stats</span>
               <span class="ea-tag">Low Risk</span>
-            </div>
+            </a>
           </div>
         </div>
 
