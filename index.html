@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Huang Technology Global — Expert Advisor Trading</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>	
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>		
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -288,7 +288,7 @@
 
     .ea-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 24px;
       margin-top: 52px;
     }
@@ -312,6 +312,11 @@
       border-bottom: 1px solid rgba(255,78,78,0.2);
       color: #ff7a7a;
     }
+    .ea-card.mid .ea-card-header {
+      background: rgba(255,165,0,0.1);
+      border-bottom: 1px solid rgba(255,165,0,0.25);
+      color: #ffb347;
+    }
     .ea-card.low .ea-card-header {
       background: rgba(62,207,110,0.1);
       border-bottom: 1px solid rgba(62,207,110,0.2);
@@ -334,7 +339,8 @@
       flex-shrink: 0;
     }
     .high .ea-bullet { background: var(--red); box-shadow: 0 0 6px rgba(255,78,78,0.6); }
-    .low .ea-bullet { background: var(--green); box-shadow: 0 0 6px rgba(62,207,110,0.6); }
+    .mid .ea-bullet  { background: #ffa500; box-shadow: 0 0 6px rgba(255,165,0,0.6); }
+    .low .ea-bullet  { background: var(--green); box-shadow: 0 0 6px rgba(62,207,110,0.6); }
 
     .ea-name {
       font-family: 'Inter', sans-serif;
@@ -348,6 +354,7 @@
       padding: 3px 10px; border-radius: 2px;
     }
     .high .ea-tag { color: #ff7a7a; background: rgba(255,78,78,0.12); border: 1px solid rgba(255,78,78,0.2); }
+    .mid .ea-tag  { color: #ffb347; background: rgba(255,165,0,0.12); border: 1px solid rgba(255,165,0,0.25); }
     .low .ea-tag  { color: #5de88a; background: rgba(62,207,110,0.12); border: 1px solid rgba(62,207,110,0.2); }
 
     .ea-link {
@@ -519,6 +526,9 @@
       .nav-links { display: none; }
       .section { padding: 70px 20px; }
       .steps-row { grid-template-columns: 1fr 1fr; }
+      .ea-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 580px) {
       .ea-grid { grid-template-columns: 1fr; }
       .profit-visual { flex-direction: column; }
       .register-box { padding: 36px 24px; }
@@ -637,6 +647,22 @@
           </div>
         </div>
 
+        <!-- MID RISK -->
+        <div class="ea-card mid">
+          <div class="ea-card-header">
+            <span class="risk-icon">🔶</span>
+            Mid Risk — Balanced Performance
+          </div>
+          <div class="ea-card-body">
+            <a class="ea-item ea-link" href="https://www.myfxbook.com/portfolio/htg-ea-f832/12106183" target="_blank">
+              <div class="ea-bullet"></div>
+              <span class="ea-name">F8.3.2</span>
+              <span class="ea-live">📊 Live Stats</span>
+              <span class="ea-tag">Mid Risk</span>
+            </a>
+          </div>
+        </div>
+
         <!-- LOW RISK -->
         <div class="ea-card low">
           <div class="ea-card-header">
@@ -662,7 +688,7 @@
       </div>
 
       <div class="profit-note" style="margin-top:24px;">
-        <strong>Not sure which EA to choose?</strong> High Risk EAs target larger short-term gains with higher drawdown potential. Low Risk EAs aim for steady, consistent growth with tighter risk controls. Our team is happy to guide you — contact us before registering.
+        <strong>Not sure which EA to choose?</strong> High Risk EAs target larger short-term gains with higher drawdown potential. Mid Risk EAs offer a balanced approach between growth and stability. Low Risk EAs aim for steady, consistent growth with tighter risk controls. Our team is happy to guide you — contact us before registering.
       </div>
     </div>
   </section>
@@ -702,7 +728,7 @@
     <div class="section-inner">
       <div class="sec-label">Get Started</div>
       <h2 class="sec-title">Register Your Account</h2>
-      <p class="sec-body" style="margin:0 auto;">Ready to start? Fill in the form below and our team will set up your EA within 24 hours.</p>
+      <p class="sec-body" style="margin:0 auto;">Ready to start? Complete our quick registration form and our team will set up your EA within 24 hours.</p>
 
       <div class="register-box">
         <div class="register-steps">
@@ -750,7 +776,7 @@
         </div>
 
         <div class="disclaimer-text">
-          After submitting, our team will reach out via the contact details you provide to confirm setup and guide you through any remaining steps.
+          Your information is securely handled by Google. After submitting, our team will reach out to confirm your setup within 24 hours.
         </div>
       </div>
     </div>
