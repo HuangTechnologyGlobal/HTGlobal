@@ -47,6 +47,8 @@ exports.handler = async function(event, context) {
     });
 
     const text = await response.text();
+    console.log('Groq response status:', response.status);
+    console.log('Groq response body:', text);
 
     return {
       statusCode: response.status,
